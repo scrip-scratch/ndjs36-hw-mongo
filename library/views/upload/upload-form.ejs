@@ -1,0 +1,23 @@
+<form action="http://localhost:3000/books/" method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="bookTitle" class="form-label">Название</label>
+    <input class="form-control" id="bookTitle" name="bookTitle" required>
+  </div>
+  <div class="mb-3">
+    <label for="bookAuthors" class="form-label">Авторы</label>
+    <input class="form-control" id="bookAuthors" name="bookAuthors" required></input>
+  </div>
+  <div class="mb-3">
+    <label for="bookDescription" class="form-label">Описание</label>
+    <textarea class="form-control" id="bookDescription" rows="3" name="bookDescription" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label for="bookCover" class="form-label">Обложка</label>
+    <input class="form-control" type="file" id="bookCover" name="bookCover" required>
+  </div>
+  <div class="mb-3">
+    <label for="bookFile" class="form-label">Файл книги</label>
+    <input class="form-control" type="file" id="bookFile" name="bookFile" required>
+  </div>
+  <button type="submit" class="btn btn-primary mb-3 ms-auto d-flex">Загрузить</button>
+</form>

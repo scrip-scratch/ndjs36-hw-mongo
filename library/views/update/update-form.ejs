@@ -1,0 +1,27 @@
+<form action="http://localhost:3000/books/update/" method="post" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="bookTitle" class="form-label">Название</label>
+    <input class="form-control" id="bookTitle" name="bookTitle" required value="<%= book.title %>">
+    <input type="hidden" id="bookId" name="bookId" value="<%= book.id %>">
+  </div>
+  <div class="mb-3">
+    <label for="bookAuthors" class="form-label">Авторы</label>
+    <input class="form-control" id="bookAuthors" name="bookAuthors" required value="<%= book.authors %>"></input>
+  </div>
+  <div class="mb-3">
+    <label for="bookDescription" class="form-label">Описание</label>
+    <textarea class="form-control" id="bookDescription" rows="3" name="bookDescription" required><%= book.description %></textarea>
+  </div>
+  <div class="mb-3" style="max-width: 250px;">
+    <img class="w-100" src="<%= `/public/covers/${book.fileCover}` %>" alt="Обложка книги <%= book.title %>">
+  </div>
+  <div class="mb-3">
+    <label for="bookCover" class="form-label">Обложка</label>
+    <input class="form-control" type="file" id="bookCover" name="bookCover">
+  </div>
+  <div class="mb-3">
+    <label for="bookFile" class="form-label">Файл книги</label>
+    <input class="form-control" type="file" id="bookFile" name="bookFile">
+  </div>
+  <button type="submit" class="btn btn-primary mb-3 ms-auto d-flex">Обновить</button>
+</form>

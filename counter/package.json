@@ -1,0 +1,19 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "server": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "redis": "^4.6.15"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

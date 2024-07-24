@@ -1,0 +1,9 @@
+<%- include('./port/layout-start', {title: `Редактировать ${book.title}`}) %>
+<%- include('./port/navbar') %>
+
+
+<div class="container-fluid">
+  <%- include('./update/update-form', {book: book}) %>
+</div>
+
+<%- include('./port/layout-end') %>
